@@ -1,0 +1,148 @@
+/* Reset default margins and padding for html and body, set full height, and use Montserrat font */
+html,
+body {
+  margin: 0; /* Removes default margins around the page */
+  padding: 0; /* Removes default padding inside the page */
+  height: 100%; /* Sets the height to 100% of the viewport for full-screen layout */
+  font-family:
+    "Montserrat", sans-serif; /* Applies the Montserrat font family to all text on the page */
+}
+
+/* Section one start */
+/* Style for the landing page section: full screen height, background image, center content */
+.landing-page {
+  height: 100vh; /* Sets the section height to 100% of the viewport height (full screen) */
+  background-image: url("../images/landing_page.jpeg"); /* Sets the background image from the images folder */
+  background-size: cover; /* Scales the background image to cover the entire section without distortion */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Arranges child elements vertically */
+  align-items: center; /* Centers child elements horizontally */
+  justify-content: center; /* Centers child elements vertically */
+  text-align: center; /* Centers text inside child elements */
+  position: relative; /* Allows absolute positioning of child elements relative to this section */
+}
+
+/* Dark overlay on the background image for better text readability */
+.landing-page::before {
+  content: ""; /* Required for pseudo-elements; inserts empty content */
+  position: absolute; /* Positions the overlay absolutely within the relative parent */
+  top: 0; /* Places the overlay at the top of the section */
+  left: 0; /* Places the overlay at the left of the section */
+  width: 100%; /* Makes the overlay span the full width of the section */
+  height: 100%; /* Makes the overlay span the full height of the section */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adds a semi-transparent black background (50% opacity) for darkening */
+  z-index: 1; /* Sets the stacking order so the overlay is above the background but below text */
+}
+
+/* Navbar styles: positioned at top of landing page, glassmorphism effect, high z-index */
+nav {
+  position: absolute; /* Positions the navbar absolutely within the relative landing-page section */
+  height: 35px;
+  top: 0; /* Places it at the top of the section */
+  width: 100%; /* Spans the full width of the section */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for a darker glass effect */
+  backdrop-filter: blur(8px); /* Applies blur to the background behind the navbar for glassmorphism */
+  -webkit-backdrop-filter: blur(6px); /* Safari support for backdrop-filter */
+  z-index: 3; /* High z-index to stay above overlay and text */
+  padding: 10px 0; /* Adds vertical padding for spacing */
+  display: flex; /* Use flex layout to center child content */
+  justify-content: center; /* Center the navbar items horizontally */
+  align-items: center; /* Center the navbar items vertically */
+}
+
+nav ul {
+  list-style: none; /* Removes default bullet points */
+  display: flex; /* Uses flexbox for horizontal layout */
+  justify-content: center; /* Centers the list items */
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding */
+  width: auto; /* Keep list width auto so items stay centered */
+}
+
+nav li {
+  margin: 0 20px; /* Adds horizontal spacing between list items */
+}
+
+nav a {
+  color: white; /* Sets link color to white */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: 100; /* Normal font weight */
+  font-size: 13px; /* Sets font size for readability */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Style for the main heading in landing page: white color, large size, bold, above overlay */
+.landing-page h1 {
+  color: white; /* Sets the text color to white */
+  font-size: 50px; /* Sets the font size to 50 pixels for large, prominent text */
+  margin: 0; /* Removes default margins around the heading */
+  font-weight: 700; /* Makes the font bold (700 is bold in Montserrat) */
+  position: relative; /* Allows z-index to work */
+  z-index: 2; /* Places the heading above the overlay (higher than z-index 1) */
+}
+
+/* Style for the paragraph in landing page: white color, medium size, limited width, above overlay */
+.landing-page p {
+  color: white; /* Sets the text color to white */
+  font-size: 15px; /* Sets the font size to 15 pixels for readable subtext */
+  margin: 20px 0 0 0; /* Adds 20px top margin, no margins on sides or bottom */
+  max-width: 600px; /* Limits the paragraph width to 600px for better readability on large screens */
+  font-weight: 400; /* Sets normal font weight (400 is regular in Montserrat) */
+  position: relative; /* Allows z-index to work */
+  z-index: 2; /* Places the paragraph above the overlay (higher than z-index 1) */
+}
+
+/* Button container to arrange buttons properly */
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px; /* Space above the container */
+  position: relative; /* Allows z-index to work */
+  z-index: 2; /* Places above overlay */
+}
+
+/* Button styles for Book Now and Learn More */
+.btn {
+  padding: 10px 20px; /* Padding inside buttons */
+  font-size: 14px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s; /* Smooth transitions */
+  backdrop-filter: blur(5px); /* Light blur for glass effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari support */
+}
+
+/* Primary button style (Book Now) */
+.primary-button {
+  background: rgba(255, 255, 255, 0.9); /* Solid white background for prominence */
+  color: #333; /* Dark text for contrast */
+  border: 2px solid rgba(255, 255, 255, 0.9); /* Solid border */
+}
+
+.primary-button:hover {
+  background: rgba(255, 255, 255, 1); /* Fully white on hover */
+  color: #000; /* Even darker text */
+}
+
+/* Secondary button style (Learn More) */
+.secondary-button {
+  background: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* White border */
+}
+
+.secondary-button:hover {
+  background: rgba(255, 255, 255, 0.1); /* Light background on hover */
+  border-color: rgba(255, 255, 255, 1); /* Brighter border */
+}
+/* Section one end */
