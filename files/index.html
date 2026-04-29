@@ -6,11 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forest Adventure</title>
     <!-- Internal CSS file -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <!-- Main content section -->
@@ -22,9 +22,9 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Adventure</a></li>
+                <li><a href="#adventure">Adventure</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#">Content</a></li>
                 <li><a href="#">Book Now</a></li>
             </ul>
@@ -41,11 +41,788 @@
     </section>
     <!--Section one end-->
     <!--Section two start-->
-    <section>
-        
+    <section class="adventures" id="adventure">
+        <h2>Explore Adventures</h2>
+        <p class="adventures-subtitle">Choose your next outdoor story from trails, camps, wildlife, and river days.</p>
+
+        <div class="adventures-grid">
+
+            <div class="adventure-card">
+                <div class="adventure-image">
+                    <img src="../images/camping.jpeg" alt="Camping">
+                </div>
+                <div class="adventure-content">
+                    <h2>Camping</h2>
+                    <p>Sleep under quiet skies, gather around the fire, and wake up close to nature.</p>
+                </div>
+            </div>
+
+            <div class="adventure-card">
+                <div class="adventure-image">
+                    <img src="../images/trekking.jpeg" alt="Trekking">
+                </div>
+                <div class="adventure-content">
+                    <h2>Trekking</h2>
+                    <p>Follow fresh mountain paths with scenic views, steady climbs, and real trail energy.</p>
+                </div>
+            </div>
+
+            <div class="adventure-card">
+                <div class="adventure-image">
+                    <img src="../images/wildlife.jpeg" alt="Wildlife">
+                </div>
+                <div class="adventure-content">
+                    <h2>Wildlife</h2>
+                    <p>Watch the forest come alive through guided nature walks and peaceful wildlife moments.</p>
+                </div>
+            </div>
+
+            <div class="adventure-card">
+                <div class="adventure-image">
+                    <img src="../images/crossing_river.jpeg" alt="River Crossing">
+                </div>
+                <div class="adventure-content">
+                    <h2>River Crossing</h2>
+                    <p>Step into the rush with safe crossings, cool water, and a bold team challenge.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <!--Section two start-->
-    <!-- JavaScript file -->
+    <!--Section two end-->
+    <!--Section three start-->
+    <section class="why-choose-us" id="why-choose-us">
+
+        <div class="why-header">
+            <h2>Why Choose Our Adventures</h2>
+            <p>Experience nature with expert guides, safety, and unforgettable moments</p>
+        </div>
+
+        <div class="why-grid">
+
+            <article class="why-card why-card-tall">
+                <div class="why-card-image">
+                    <img src="../images/section3.1.jpeg" alt="">
+                </div>
+                <div class="why-card-meta">
+                    <span>01/</span>
+                    <span>Nature First</span>
+                </div>
+                <div class="why-card-content">
+                    <h3>Real Trails Create Lasting Stories</h3>
+                    <p>Every route is planned around fresh air, quiet views, and meaningful time outside.</p>
+                </div>
+            </article>
+
+            <article class="why-card why-card-wide">
+                <div class="why-card-image">
+                    <img src="../images/section3.2.jpeg" alt="">
+                </div>
+                <div class="why-card-meta">
+                    <span>02/</span>
+                </div>
+                <h3>Where Adventure Feels Effortless</h3>
+            </article>
+
+            <article class="why-card why-card-text">
+                <div class="why-card-image">
+                    <img src="../images/section3.3.jpeg" alt="">
+                </div>
+                <div class="why-card-meta">
+                    <span>Small Groups</span>
+                    <span>03/</span>
+                </div>
+                <p>From weekend escapes to deeper forest trips, our guides keep every moment clear, safe, and easy to
+                    enjoy.</p>
+                <a href="#adventure" class="why-card-button">Explore Adventures</a>
+            </article>
+
+            <article class="why-card why-card-stat">
+                <div class="why-card-image">
+                    <img src="../images/section3.4.jpeg" alt="">
+                </div>
+                <div class="why-card-meta">
+                    <span>04/</span>
+                    <span>Trusted Trips</span>
+                </div>
+                <div class="why-stat">
+                    <strong>93%</strong>
+                    <span>Guests Recommend Our Outdoor Experiences</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--Section three end-->
+
+    <!--Section four start-->
+    <section class="gallery" id="gallery">
+        <div class="gallery-wrap">
+            <div class="gallery-heading">
+                <span>Gallery</span>
+                <h2>Trusted by explorers and nature lovers</h2>
+                <p>from forest trails, camps, rivers, and mountain escapes</p>
+            </div>
+
+            <div class="gallery-collage" aria-label="Adventure gallery">
+                <div class="gallery-stack gallery-stack-left">
+                    <figure class="gallery-tile gallery-tile-small gallery-offset-low">
+                        <img src="../images/gallery_section/gallery1.jpeg" alt="Guided forest trail walk">
+                    </figure>
+                    <figure class="gallery-tile gallery-tile-small">
+                        <img src="../images/gallery_section/gallery2.jpeg" alt="Forest campsite with tents and fire">
+                    </figure>
+                </div>
+
+                <div class="gallery-stack gallery-stack-left-mid">
+                    <figure class="gallery-tile gallery-tile-small">
+                        <img src="../images/gallery_section/gallery12.jpeg" alt="Group crossing a clear river">
+                    </figure>
+                    <figure class="gallery-tile gallery-tile-tiny">
+                        <img src="../images/gallery_section/gallery7.jpeg" alt="Campfire gathering from above">
+                    </figure>
+                    <figure class="gallery-tile gallery-tile-small">
+                        <img src="../images/gallery_section/gallery9.jpeg" alt="Mountain trail map break">
+                    </figure>
+                </div>
+
+                <figure class="gallery-tile gallery-tile-tall gallery-offset-high">
+                    <img src="../images/gallery_section/gallery5.jpeg" alt="Mountain forest overlook">
+                </figure>
+
+                <figure class="gallery-tile gallery-tile-tall">
+                    <img src="../images/gallery_section/gallery8.jpeg" alt="Outdoor field study on a forest floor">
+                </figure>
+
+                <figure class="gallery-tile gallery-tile-tall">
+                    <img src="../images/gallery_section/gallery11.jpeg" alt="Quiet moment on a forest trail">
+                </figure>
+
+                <div class="gallery-stack gallery-stack-right-mid">
+                    <figure class="gallery-tile gallery-tile-small">
+                        <img src="../images/gallery_section/gallery13.jpeg" alt="Wildlife watchers with binoculars">
+                    </figure>
+                    <figure class="gallery-tile gallery-tile-small">
+                        <img src="../images/gallery_section/gallery14.jpeg" alt="Guided nature watching group">
+                    </figure>
+                </div>
+
+                <div class="gallery-stack gallery-stack-right">
+                    <figure class="gallery-tile gallery-tile-small">
+                        <img src="../images/gallery_section/gallery6.jpeg" alt="Campfire meeting in the forest">
+                    </figure>
+                    <figure class="gallery-tile gallery-tile-small gallery-offset-low">
+                        <img src="../images/gallery_section/gallery10.jpeg" alt="Solo forest meditation stop">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section four end-->
+
+    <!--Section five start-->
+    <section class="client-reviews" id="reviews">
+        <div class="client-reviews-wrap">
+            <h2>What Our Clients Are <span>Saying</span></h2>
+
+            <div class="client-review-grid">
+                <article class="client-review-card client-review-card-small">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery10.jpeg" alt="Portrait of Maya R.">
+                        <div>
+                            <h3>Maya R.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>I highly recommend this adventure team to anyone looking to slow down, breathe deeply, and feel
+                        more connected to the forest.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-wide">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery13.jpeg" alt="Portrait of Arjun S.">
+                        <div>
+                            <h3>Arjun S.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>Before joining the trek, planning an outdoor trip felt confusing. The guides handled the route,
+                        gear advice, safety checks, and pace so our group could simply enjoy the mountain views and
+                        river stops.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-wide">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery14.jpeg" alt="Portrait of Lena K.">
+                        <div>
+                            <h3>Lena K.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>The camping night was beautifully organized. We had warm food, clear instructions, quiet time
+                        around the fire, and enough freedom to explore without ever feeling lost.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-small">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery11.jpeg" alt="Portrait of Noor A.">
+                        <div>
+                            <h3>Noor A.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>The river crossing felt exciting but safe. Every step was explained clearly, and the whole day
+                        had a real sense of adventure.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-small">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery1.jpeg" alt="Portrait of Evan P.">
+                        <div>
+                            <h3>Evan P.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>The trail walk had the perfect pace. We learned about the forest, took great photos, and never
+                        felt rushed.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-wide">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery2.jpeg" alt="Portrait of Priya M.">
+                        <div>
+                            <h3>Priya M.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>Our campsite was ready, comfortable, and calm. The team made the whole night feel thoughtful,
+                        from the fire setup to the morning route plan.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-wide">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery5.jpeg" alt="Portrait of Daniel C.">
+                        <div>
+                            <h3>Daniel C.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>The mountain view stop was unforgettable. Our guide knew exactly when to pause, where to look,
+                        and how to keep everyone comfortable.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-small">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery6.jpeg" alt="Portrait of Sara T.">
+                        <div>
+                            <h3>Sara T.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>The group energy was warm and easy. By the campfire, it felt like we had known everyone for
+                        years.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-small">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery8.jpeg" alt="Portrait of Miles H.">
+                        <div>
+                            <h3>Miles H.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>Every detail was handled with care. The trip felt adventurous, but never stressful or unclear.
+                    </p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+
+                <article class="client-review-card client-review-card-wide">
+                    <div class="client-review-header">
+                        <img src="../images/gallery_section/gallery12.jpeg" alt="Portrait of Amara J.">
+                        <div>
+                            <h3>Amara J.</h3>
+                            <div class="client-review-stars" aria-label="5 star rating">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>The river route was the highlight of our weekend. It had just enough challenge, beautiful
+                        scenery, and a guide who made everyone feel confident.</p>
+                    <time datetime="2026-04-29">April 29, 2026</time>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--Section five end-->
+
+    <!--Section six start-->
+    <section class="packages" id="packages">
+        <div class="packages-container">
+            <!-- Sidebar -->
+            <aside class="packages-sidebar">
+                <button class="back-btn" aria-label="Go back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                </button>
+                
+                <div class="sidebar-main">
+                    <h2>Choose your adventure</h2>
+                    <div class="sidebar-filters">
+                        <span class="filter-tag">Camping</span>
+                        <span class="filter-tag">Trekking</span>
+                        <span class="filter-tag">High level of activity</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="sidebar-text">
+                        <p>Based on your preferences, we have curated the best outdoor experiences for you.</p>
+                        <p>You can adjust your activity level or change your preferred adventure type.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Grid -->
+            <div class="packages-grid">
+                <!-- Card 1 -->
+                <article class="package-card">
+                    <img src="../images/packages/deep_forest_camping.jpeg" alt="" class="package-bg">
+                    <div class="package-overlay">
+                        <div class="card-header">
+                            <div class="star-badge">★</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Deep Forest Camping</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="card-location">Pine Valley</span>
+                                <div class="card-tags">
+                                    <span class="card-tag">Camping</span>
+                                    <span class="card-tag">Beginner friendly</span>
+                                </div>
+                            </div>
+                            <button class="arrow-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="package-card">
+                    <img src="../images/packages/high_peak_trekking.jpeg" alt="" class="package-bg">
+                    <div class="package-overlay">
+                        <div class="card-header">
+                            <div class="star-badge">★</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>High Peak Trekking</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="card-location">Blue Mountains</span>
+                                <div class="card-tags">
+                                    <span class="card-tag">Trekking</span>
+                                    <span class="card-tag">High level of activity</span>
+                                </div>
+                            </div>
+                            <button class="arrow-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="package-card">
+                    <img src="../images/packages/Wilderness_Safari.jpeg" alt="" class="package-bg">
+                    <div class="package-overlay">
+                        <div class="card-header">
+                            <div class="star-badge">★</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Wilderness Safari</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="card-location">National Park</span>
+                                <div class="card-tags">
+                                    <span class="card-tag">Wildlife</span>
+                                    <span class="card-tag">Guided tour</span>
+                                </div>
+                            </div>
+                            <button class="arrow-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="package-card">
+                    <img src="../images/packages/White_River_Rafting.jpeg" alt="" class="package-bg">
+                    <div class="package-overlay">
+                        <div class="card-header">
+                            <div class="star-badge">★</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>White River Rafting</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="card-location">Clearwater River</span>
+                                <div class="card-tags">
+                                    <span class="card-tag">River</span>
+                                    <span class="card-tag">Extreme</span>
+                                </div>
+                            </div>
+                            <button class="arrow-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="package-card">
+                    <img src="../images/packages/Night_Sky_Glamping.jpeg" alt="" class="package-bg">
+                    <div class="package-overlay">
+                        <div class="card-header">
+                            <div class="star-badge">★</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Night Sky Glamping</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="card-location">Starry Summit</span>
+                                <div class="card-tags">
+                                    <span class="card-tag">Camping</span>
+                                    <span class="card-tag">Relaxing</span>
+                                </div>
+                            </div>
+                            <button class="arrow-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="package-card">
+                    <img src="../images/packages/Mountain_Biking_.jpeg" alt="" class="package-bg">
+                    <div class="package-overlay">
+                        <div class="card-header">
+                            <div class="star-badge">★</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Mountain Biking</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta">
+                                <span class="card-location">Rocky Trails</span>
+                                <div class="card-tags">
+                                    <span class="card-tag">Biking</span>
+                                    <span class="card-tag">High level of activity</span>
+                                </div>
+                            </div>
+                            <button class="arrow-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--Section six end-->
+
+    <section class="initiatives-section" id="initiatives">
+        <div class="initiatives-container">
+            <div class="initiatives-header">
+                <div class="header-left">
+                    <h2>Our expeditions for 2024</h2>
+                </div>
+                <div class="header-right">
+                    <p>Discover the wild adventures we are<br>planning to explore the unknown.</p>
+                </div>
+            </div>
+
+            <div class="initiatives-list">
+                <div class="list-header">
+                    <span class="col-title">Adventure</span>
+                    <span class="col-tags">Categories</span>
+                    <span class="col-date">Date</span>
+                    <span class="col-action"></span>
+                </div>
+
+                <div class="list-item">
+                    <div class="col-title">Amazon Rainforest Trek</div>
+                    <div class="col-tags">
+                        <span class="tag tag-green">Wilderness</span>
+                        <span class="tag tag-blue">Deep Jungle</span>
+                    </div>
+                    <div class="col-date">12/03/24</div>
+                    <div class="col-action">
+                        <button class="small-arrow-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <div class="col-title">Himalayan Base Camp</div>
+                    <div class="col-tags">
+                        <span class="tag tag-yellow">Extreme</span>
+                    </div>
+                    <div class="col-date">29/05/24</div>
+                    <div class="col-action">
+                        <button class="small-arrow-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <div class="col-title">Iceland Glacial Walk</div>
+                    <div class="col-tags">
+                        <span class="tag">Icy Terrain</span>
+                        <span class="tag tag-green">Eco-tour</span>
+                    </div>
+                    <div class="col-date">06/06/24</div>
+                    <div class="col-action">
+                        <button class="small-arrow-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <div class="col-title">Sahara Desert Safari</div>
+                    <div class="col-tags">
+                        <span class="tag">Survival</span>
+                    </div>
+                    <div class="col-date">18/08/24</div>
+                    <div class="col-action">
+                        <button class="small-arrow-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="initiatives-grid">
+                <div class="initiative-card">
+                    <div class="card-img-container">
+                        <img src="../images/locations/Deep_Ocean_Diving_202604291258.jpeg" alt="" class="card-img">
+                        <div class="card-top-left">
+                            <span class="tag-pill">Exploration</span>
+                            <span class="tag-pill">Extreme</span>
+                        </div>
+                        <button class="card-top-right">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Deep Ocean Diving</h3>
+                        <p>Plunge into the abyss and discover bioluminescent wonders hidden beneath the surface.</p>
+                        <button class="explore-btn">
+                            EXPLORE CHALLENGE
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="initiative-card">
+                    <div class="card-img-container">
+                        <img src="../images/locations/Alpine_Peak_Summit_202604291258.jpeg" alt="" class="card-img">
+                        <div class="card-top-left">
+                            <span class="tag-pill">Mountain</span>
+                        </div>
+                        <button class="card-top-right">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Alpine Peak Summit</h3>
+                        <p>Scale the highest peaks of the Alps and witness breathtaking panoramas above the clouds.</p>
+                        <button class="explore-btn">
+                            EXPLORE CHALLENGE
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="initiative-card">
+                    <div class="card-img-container">
+                        <img src="../images/locations/Ancient_Forest_Trail_202604291258.jpeg" alt="" class="card-img">
+                        <div class="card-top-left">
+                            <span class="tag-pill">Forest</span>
+                        </div>
+                        <button class="card-top-right">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ancient Forest Trail</h3>
+                        <p>Navigate through centuries-old woodlands and encounter rare species in their natural habitat.</p>
+                        <button class="explore-btn">
+                            EXPLORE CHALLENGE
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="initiative-card">
+                    <div class="card-img-container">
+                        <img src="../images/locations/Skydiving_Descent_202604291258.jpeg" alt="" class="card-img">
+                        <div class="card-top-left">
+                            <span class="tag-pill">Sky</span>
+                        </div>
+                        <button class="card-top-right">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Skydiving Descent</h3>
+                        <p>Feel the ultimate adrenaline rush as you freefall from 15,000 feet over stunning landscapes.</p>
+                        <button class="explore-btn">
+                            EXPLORE CHALLENGE
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <!-- Background graphics -->
+
+        <div class="faq-container">
+            <h2>FAQ's</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span class="faq-icon">+</span>
+                        <span class="faq-question">Chamber reached do he nothing be?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item active">
+                    <button class="faq-btn">
+                        <span class="faq-icon">-</span>
+                        <span class="faq-question">Stuff sight equal of my woody?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span class="faq-icon">+</span>
+                        <span class="faq-question">At by pleasure of children be?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span class="faq-icon">+</span>
+                        <span class="faq-question">Amounted repeated as believed in confined?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span class="faq-icon">+</span>
+                        <span class="faq-question">In am do giving to afford parish settle easily garret?</span>
+                    </button>
+                    <div class="faq-content">
+                        <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section start-->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2z"></path><path d="M12 18l-5-5"></path><path d="M12 18l5-5"></path></svg>
+                        <span>Adventure</span>
+                    </div>
+                    <p class="footer-description">
+                        Adventure helps you escape the routine and dive into real outdoor experiences — everything you need in one place.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Camping</a></li>
+                            <li><a href="#">Trekking</a></li>
+                            <li><a href="#">Wildlife</a></li>
+                            <li><a href="#">River Crossing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">Map & Trails</a></li>
+                            <li><a href="#">Safety</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adventure. All rights reserved</p>
+                <div class="footer-legal">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+
     <script src="script.js"></script>
 </body>
 
